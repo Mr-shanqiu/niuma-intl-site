@@ -1,0 +1,49 @@
+# Corporate Cattle Merit (賽博社畜功德 / サイバー社畜功徳)
+
+> A quiet, fully offline desktop companion. Every keystroke and click quietly
+> accrues a little "merit". The client is free for Windows and macOS; paid
+> appearance packs and a one-time full unlock are optional.
+
+## What it is
+
+- Product name: Corporate Cattle Merit (Chinese: 賽博社畜功德 / Japanese: サイバー社畜功徳)
+- Category: desktop utility / focus-and-encouragement companion
+- It counts how many key presses and clicks happen and turns that count into "merit".
+- It never reads what you type, your cursor position, window titles, or clipboard.
+- It works fully offline. There is no account, no login, no activation, and no telemetry.
+- All counts, settings and history stay on your own computer; nothing is uploaded.
+
+## Pricing (USD)
+
+- Desktop client: $0 (free, includes the base woodfish and all core features)
+- Appearance pack: $0.80 for the first pack, $0.20 for each additional pack in the same order
+- Full Unlock: $6.88 one-time (every current and future appearance, plus exclusive VIP designs)
+- Payments are processed by Paddle.com, the Merchant of Record.
+
+## System requirements
+
+- Windows 10 or Windows 11
+- macOS (Apple Silicon and Intel)
+
+## Links
+
+- Website: https://merit.zqscreen.cn/
+- Terms of Service: https://merit.zqscreen.cn/terms.html
+- Privacy Policy: https://merit.zqscreen.cn/privacy.html
+- Refund Policy: https://merit.zqscreen.cn/refund.html
+- Japan Specified Commercial Transactions Act disclosure: https://merit.zqscreen.cn/tokushoho.html
+
+## Key FAQ facts
+
+- Does it read what I type? No. It only counts that a key press or click happened.
+- Does it need an account or internet? No. It runs fully offline, with no login or telemetry.
+- Where is my data stored? Only on your own computer. Nothing is uploaded.
+- How do I receive a purchase? After payment we email the latest client, the appearance
+  files you bought, and your VIP designs; keep the email to re-download.
+- Can I get a refund? Digital goods are delivered instantly and are not refundable at will;
+  if a download or import fails, contact support and it will be made right.
+
+## Seller
+
+- Seller: Corporate Cattle Merit (sole proprietor based in Xi'an, China)
+- Contact: f104783@outlook.com

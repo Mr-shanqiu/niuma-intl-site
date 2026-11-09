@@ -39,6 +39,24 @@
       var brand = (DICT[lang] && DICT[lang]["brand.name"]) || (DICT.en && DICT.en["brand.name"]);
       document.title = titleKey && brand ? t + " — " + brand : t;
     }
+    // Localise meta description / social preview tags for the active language.
+    // NOTE: this runs client-side; crawlers that do not execute JS only ever see
+    // the static (English) tags in index.html.
+    var desc = (DICT[lang] && DICT[lang]["meta.description"]) || (DICT.en && DICT.en["meta.description"]);
+    if(desc){
+      setMeta("name","description",desc);
+      setMeta("property","og:description",desc);
+      setMeta("name","twitter:description",desc);
+      var ot = (DICT[lang] && DICT[lang]["meta.title"]) || (DICT.en && DICT.en["meta.title"]);
+      if(ot){
+        setMeta("property","og:title",ot);
+        setMeta("name","twitter:title",ot);
+      }
+    }
+  }
+  function setMeta(attr, key, value){
+    var el = document.head.querySelector('meta['+attr+'="'+key+'"]');
+    if(el) el.setAttribute("content", value);
   }
   window.CCM_setLang = function(l){ if(LANGS.indexOf(l)>=0){ apply(l); var u=new URL(location); u.searchParams.set("lang",l); history.replaceState(null,"",u); } };
   document.addEventListener("DOMContentLoaded", function(){

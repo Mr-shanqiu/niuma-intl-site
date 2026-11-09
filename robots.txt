@@ -1,0 +1,7 @@
+# robots.txt — Corporate Cattle Merit (merit.zqscreen.cn)
+# Allow all crawlers, including AI answer engines.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://merit.zqscreen.cn/sitemap.xml
