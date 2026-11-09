@@ -6,7 +6,7 @@
   <title>サイバー社畜功徳 — 仕事中の静かな相棒</title>
   <meta name="description" content="静かで完全オフラインのデスクトップ相棒。タイピングとクリックが静かに功徳になります。Windows / macOS クライアントは無料、外観パックは有料。">
   <link rel="canonical" href="https://merit.zqscreen.cn/ja/">
-  <meta name="theme-color" content="#f5f5f1">
+  <meta name="theme-color" content="#F7F3EA">
   <link rel="icon" href="../favicon.svg">
   <link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/">
   <link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/">
@@ -92,11 +92,11 @@
 }
   </script>
 </head>
-<body>
+<body class="home-page">
   <a class="skip-link" href="#main" data-i18n="common.skip">本文へ移動</a>
   <header class="site-header">
     <div class="nav-inner">
-      <a class="brand" href="index.html" aria-label="Corporate Cattle Merit">
+      <a class="brand" href="index.html" aria-label="サイバー社畜功徳" data-i18n-aria="brand.name">
         <span class="brand-mark" aria-hidden="true">功</span>
         <span data-i18n="brand.name">サイバー社畜功徳</span>
       </a>
@@ -115,49 +115,41 @@
   </header>
 
   <main id="main">
-    <section class="hero shell" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="hero-badge" data-i18n="hero.badge">デスクトップ版は無料 · Windows / macOS</p>
-        <h1 id="hero-title" data-i18n="hero.h1">仕事中のタイピングが、静かに功徳になる。</h1>
-        <p class="hero-lead" data-i18n="hero.lead">デスクに寄り添う、静かで邪魔をしない相棒。キー入力とクリックのたびに、少しずつ功徳が貯まります。アカウント不要、ネット接続不要。記録するのは数字だけです。</p>
-        <div class="cta-row">
-          <a class="button button-primary" href="download.html" data-i18n="hero.cta1">無料ダウンロード</a>
-          <a class="text-link" href="#pricing" data-i18n="hero.cta2">料金を見る</a>
+    <div class="hero-stage">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="hero-badge anim" data-i18n="hero.badge">デスクトップ版は無料 · Windows / macOS</p>
+          <h1 id="hero-title" class="anim" data-i18n="hero.h1">仕事中のタイピングが、静かに功徳になる。</h1>
+          <p class="hero-lead anim" data-i18n="hero.lead">デスクに寄り添う、静かで邪魔をしない相棒。キー入力とクリックのたびに、少しずつ功徳が貯まります。アカウント不要、ネット接続不要。記録するのは数字だけです。</p>
+          <div class="cta-row anim">
+            <a class="button button-primary" href="download.html" data-i18n="hero.cta1">無料ダウンロード</a>
+            <a class="text-link" href="#pricing" data-i18n="hero.cta2">料金を見る</a>
+          </div>
+          <div class="hero-meta anim">
+            <p data-i18n="hero.meta">Windows 10/11 / macOS · 基本の木魚は無料 · アカウント不要</p>
+            <p data-i18n="hero.privacy">端末内で動作し、操作回数だけを数えます。入力内容は読み取りません。</p>
+          </div>
         </div>
-      </div>
 
-      <!-- TODO: Replace this concept line drawing with real client screenshots; it is not the client UI. -->
-      <div class="hero-object" aria-label="Abstract woodfish illustration">
-        <svg class="woodfish" viewBox="0 0 560 520" role="img" aria-labelledby="woodfish-title">
-          <title id="woodfish-title" data-i18n="visual.alt">木魚のミニマルな線画</title>
-          <g class="sound-waves" fill="none">
-            <path d="M376 93c43 12 75 43 89 83"></path>
-            <path d="M396 54c59 17 102 57 123 111"></path>
-          </g>
-          <g class="fish-body" fill="none">
-            <path d="M132 284c-10-81 48-148 132-166 94-20 181 28 195 112 16 96-51 161-150 168-92 7-165-41-177-114Z"></path>
-            <path d="M132 284c42 8 83-3 115-35"></path>
-            <path d="M265 118c12 44 42 75 88 91 37 13 71 15 106 21"></path>
-            <path d="M195 333c39 29 95 40 146 28"></path>
-            <path d="M283 151c-7 16-8 31-2 47"></path>
-            <circle cx="200" cy="217" r="5" class="fish-eye"></circle>
-          </g>
-          <g class="fish-rest" fill="none">
-            <path d="M206 414h208"></path>
-            <path d="M246 398l-12 16m100-16 12 16"></path>
-          </g>
-          <circle class="accent-dot" cx="473" cy="93" r="6"></circle>
-        </svg>
-        <span class="object-caption" data-i18n="visual.caption">働く日々に、小さな習慣を。</span>
-      </div>
-    </section>
-
-    <div class="shell">
-      <section class="values" aria-label="Product principles">
-        <p data-i18n="value.local">端末内で完結</p>
-        <p data-i18n="value.private">内容は読み取らない</p>
-        <p data-i18n="value.quiet">忙しい時も静かに</p>
+        <div class="hero-card anim">
+          <p class="hero-card-caption" data-i18n="visual.caption">働く日々に、小さな習慣を。</p>
+          <p class="merit-number" id="meritNum" aria-hidden="true">0</p>
+          <div class="fish-wrap" id="fishWrap">
+            <img src="../assets/woodfish.svg" alt="白いカード上の写実的な木魚" data-i18n-alt="visual.alt" width="480" height="340">
+          </div>
+          <button class="poke" id="meritPoke" type="button" data-i18n="visual.poke">木魚をタップして試す</button>
+        </div>
       </section>
+    </div>
+
+    <div class="values-wrap">
+      <div class="shell">
+        <section class="values" aria-label="製品の原則" data-i18n-aria="aria.values">
+          <p data-i18n="value.local">端末内で完結</p>
+          <p data-i18n="value.private">内容は読み取らない</p>
+          <p data-i18n="value.quiet">忙しい時も静かに</p>
+        </section>
+      </div>
     </div>
 
     <section id="features" class="section shell" aria-labelledby="features-title">
@@ -167,32 +159,45 @@
       </div>
       <div class="feature-grid">
         <article class="feature-item">
-          <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 13h20M8 24h13M8 35h20M33 19v16m-8-8h16"></path></svg>
+          <div class="feature-visual icon-visual">
+            <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 13h20M8 24h13M8 35h20M33 19v16m-8-8h16"></path></svg>
+          </div>
           <h3 data-i18n="f1.t">数えるだけ、読まない</h3>
           <p data-i18n="f1.d">キー入力とクリックの回数だけを数えます。入力内容・カーソル位置・ウィンドウ名・クリップボードは記録しません。</p>
         </article>
         <article class="feature-item">
-          <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="11" width="32" height="29" rx="2"></rect><path d="M8 20h32M17 7v8m14-8v8M16 27h4m7 0h5m-16 7h4"></path></svg>
+          <div class="feature-visual">
+            <img class="feature-shot feature-calendar" src="../assets/calendar-095.png" alt="実際のクライアントのカレンダー画面（中国語UI）" data-i18n-alt="shot.calendar" loading="lazy" width="1440" height="1448">
+          </div>
           <h3 data-i18n="f2.t">功徳カレンダー</h3>
           <p data-i18n="f2.d">毎日どれだけ功徳が貯まったかを確認。残業の記録も振り返れます。</p>
         </article>
         <article class="feature-item">
-          <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M9 34h30M13 30a11 11 0 0 1 22 0M24 9v5M10 15l4 3m24-3-4 3"></path></svg>
+          <div class="feature-visual phone-visual">
+            <img src="../assets/offwork-countdown.jpg" alt="実際のクライアントの退勤カウントダウン（中国語UI）" data-i18n-alt="shot.countdown" loading="lazy" width="240" height="346">
+            <img src="../assets/offwork-overtime.jpg" alt="実際のクライアントの残業画面（中国語UI）" data-i18n-alt="shot.overtime" loading="lazy" width="240" height="346">
+          </div>
           <h3 data-i18n="f3.t">仕事エンカレッジャー</h3>
           <p data-i18n="f3.d">日給を入力すると、勤務時間の経過とともに「今日の稼ぎ」が増えていきます。</p>
         </article>
         <article class="feature-item">
-          <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 8v32h32M13 33l8-11 7 5 11-15"></path><circle cx="39" cy="12" r="2"></circle></svg>
+          <div class="feature-visual icon-visual">
+            <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 8v32h32M13 33l8-11 7 5 11-15"></path><circle cx="39" cy="12" r="2"></circle></svg>
+          </div>
           <h3 data-i18n="f4.t">社畜カーブ</h3>
           <p data-i18n="f4.d">15分ごとの忙しさを可視化。直近60日分を端末内にのみ保存します。</p>
         </article>
         <article class="feature-item">
-          <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="19" r="11"></circle><path d="m18 28-3 13 9-5 9 5-3-13M20 19l3 3 6-7"></path></svg>
-          <h3 data-i18n="f5.t">メダル</h3>
+          <div class="feature-visual icon-visual">
+            <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="19" r="11"></circle><path d="m18 28-3 13 9-5 9 5-3-13M20 19l3 3 6-7"></path></svg>
+          </div>
+          <h3 data-i18n="f5.t">レベル</h3>
           <p data-i18n="f5.d">日・週・月のマイルストーン。功徳が増えると点灯します。</p>
         </article>
         <article class="feature-item">
-          <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M11 30c-3-13 7-22 18-21 12 1 17 12 11 22-5 9-25 10-29-1Z"></path><path d="M12 30c8 1 14-2 18-8M29 9c1 7 5 11 12 13"></path><circle cx="20" cy="20" r="1.5"></circle></svg>
+          <div class="feature-visual appearance-visual">
+            <img src="../assets/woodfish.svg" alt="白いカード上の写実的な木魚" data-i18n-alt="visual.alt" loading="lazy" width="480" height="340">
+          </div>
           <h3 data-i18n="f6.t">アバター素材</h3>
           <p data-i18n="f6.d">木魚を別のキャラクターに。基本の木魚はいつでも無料です。</p>
         </article>
@@ -215,6 +220,7 @@
               <li data-i18n="p3.li2">アカウント不要・オフライン動作</li>
               <li data-i18n="p3.li3">主要機能はすべて利用可</li>
             </ul>
+            <a class="text-link price-link" href="download.html" data-i18n="btn.download">無料ダウンロード</a>
           </article>
           <article class="price-item price-item-accent">
             <h3 data-i18n="p1.name">アバター素材</h3>
@@ -246,30 +252,12 @@
         <h2 id="faq-title" data-i18n="faq.title">よくある質問</h2>
       </div>
       <div class="faq-list">
-        <details open>
-          <summary data-i18n="q1.t">入力内容は読まれますか？</summary>
-          <p data-i18n="q1.d">いいえ。キーが押された・クリックされたという事実だけを数えます。内容・カーソル位置・ウィンドウ名・クリップボードは読み取りも保存もしません。</p>
-        </details>
-        <details>
-          <summary data-i18n="q2.t">アカウントやネット接続は必要ですか？</summary>
-          <p data-i18n="q2.d">不要です。完全オフラインで動作し、ログイン・認証・テレメトリはありません。</p>
-        </details>
-        <details>
-          <summary data-i18n="q3.t">データはどこに保存されますか？</summary>
-          <p data-i18n="q3.d">カウント・設定・カーブはすべてお使いの端末内に保存され、送信されません。</p>
-        </details>
-        <details>
-          <summary data-i18n="q4.t">返金できますか？</summary>
-          <p data-i18n="q4.d">デジタル商品は引き渡し後すぐに利用できるため、任意の返金はできません。ダウンロードや読み込みに失敗した場合はご連絡ください。詳細は返金ポリシーをご覧ください。</p>
-        </details>
-        <details>
-          <summary data-i18n="q5.t">購入後はどう受け取りますか？</summary>
-          <p data-i18n="q5.d">決済完了後、最新版クライアント・購入したアバター・VIPデザインをメールでお送りします。再ダウンロード用にメールを保存してください。</p>
-        </details>
-        <details>
-          <summary data-i18n="q6.t">対応OSは？</summary>
-          <p data-i18n="q6.d">Windows 10/11 と macOS（Apple Silicon / Intel）。</p>
-        </details>
+        <details open><summary data-i18n="q1.t">入力内容は読まれますか？</summary><p data-i18n="q1.d">いいえ。キーが押された・クリックされたという事実だけを数えます。内容・カーソル位置・ウィンドウ名・クリップボードは読み取りも保存もしません。</p></details>
+        <details><summary data-i18n="q2.t">アカウントやネット接続は必要ですか？</summary><p data-i18n="q2.d">不要です。完全オフラインで動作し、ログイン・認証・テレメトリはありません。</p></details>
+        <details><summary data-i18n="q3.t">データはどこに保存されますか？</summary><p data-i18n="q3.d">カウント・設定・カーブはすべてお使いの端末内に保存され、送信されません。</p></details>
+        <details><summary data-i18n="q4.t">返金できますか？</summary><p data-i18n="q4.d">デジタル商品は引き渡し後すぐに利用できるため、任意の返金はできません。ダウンロードや読み込みに失敗した場合はご連絡ください。詳細は返金ポリシーをご覧ください。</p></details>
+        <details><summary data-i18n="q5.t">購入後はどう受け取りますか？</summary><p data-i18n="q5.d">決済完了後、最新版クライアント・購入したアバター・VIPデザインをメールでお送りします。再ダウンロード用にメールを保存してください。</p></details>
+        <details><summary data-i18n="q6.t">対応OSは？</summary><p data-i18n="q6.d">Windows 10/11 と macOS（Apple Silicon / Intel）。</p></details>
       </div>
     </section>
   </main>

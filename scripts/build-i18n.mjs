@@ -97,7 +97,7 @@ function buildHead(lang, page) {
   const title = pageTitle(lang, page);
   const desc = pageDescription(lang, page);
   const canonical = urlFor(lang, page);
-  const theme = page === "tokushoho" ? "#f4f1e9" : "#f5f5f1";
+  const theme = "#F7F3EA";
 
   const hreflang = LANGS.map(
     (l) => `  <link rel="alternate" hreflang="${l}" href="${urlFor(l, page)}">`
@@ -164,7 +164,13 @@ function localizeBody(body, lang, page) {
     (m, rest, key) => `aria-label="${esc(pick(lang, key))}"${rest}`
   );
 
-  // 3. placeholder text (data-i18n-ph), if any.
+  // 3. Static alt text for localized images.
+  out = out.replace(
+    /alt="[^"]*"([^>]*data-i18n-alt="([^"]+)")/g,
+    (m, rest, key) => `alt="${esc(pick(lang, key))}"${rest}`
+  );
+
+  // 4. placeholder text (data-i18n-ph), if any.
   out = out.replace(
     /placeholder="[^"]*"([^>]*data-i18n-ph="([^"]+)")/g,
     (m, rest, key) => `placeholder="${esc(pick(lang, key))}"${rest}`
