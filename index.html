@@ -1,94 +1,217 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Corporate Cattle Merit — a quiet desk companion</title>
-<meta name="description" content="A quiet offline desktop companion. Your typing quietly becomes merit. Free client for Windows and macOS; paid appearance packs.">
-<link rel="icon" href="favicon.svg">
-<link rel="stylesheet" href="style.css">
-</head><body>
-<header class="nav"><div class="nav-inner">
-  <a class="brand" href="index.html"><span class="seal">功</span><span data-i18n="meta.title">Corporate Cattle Merit</span></a>
-  <nav>
-    <a href="#features" data-i18n="nav.features">Features</a>
-    <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
-    <a href="#faq" data-i18n="nav.faq">FAQ</a>
-  </nav>
-  <div class="lang">
-    <button data-lang="en">EN</button><button data-lang="zh-Hant">繁</button><button data-lang="ja">日本語</button>
-  </div>
-</div></header>
-
-<main class="wrap">
-  <section class="hero">
-    <span class="badge" data-i18n="hero.badge">Free desktop client · Windows &amp; macOS</span>
-    <h1 data-i18n="hero.h1">Your typing quietly becomes merit.</h1>
-    <p class="lead" data-i18n="hero.lead">A calm, silent companion for your desktop.</p>
-    <div class="cta">
-      <a class="btn primary" href="#pricing" data-i18n="hero.cta1">Download for free</a>
-      <a class="btn ghost" href="#pricing" data-i18n="hero.cta2">See pricing</a>
-    </div>
-  </section>
-
-  <section id="features">
-    <h2 data-i18n="feat.title">Built to stay out of the way</h2>
-    <p class="sub" data-i18n="feat.sub">Everything runs locally.</p>
-    <div class="grid g3">
-      <div class="card"><h3 data-i18n="f1.t"></h3><p data-i18n="f1.d"></p></div>
-      <div class="card"><h3 data-i18n="f2.t"></h3><p data-i18n="f2.d"></p></div>
-      <div class="card"><h3 data-i18n="f3.t"></h3><p data-i18n="f3.d"></p></div>
-      <div class="card"><h3 data-i18n="f4.t"></h3><p data-i18n="f4.d"></p></div>
-      <div class="card"><h3 data-i18n="f5.t"></h3><p data-i18n="f5.d"></p></div>
-      <div class="card"><h3 data-i18n="f6.t"></h3><p data-i18n="f6.d"></p></div>
-    </div>
-  </section>
-
-  <section id="pricing">
-    <h2 data-i18n="price.title">Simple pricing</h2>
-    <p class="sub" data-i18n="price.sub">The client is free forever.</p>
-    <div class="grid g3">
-      <div class="price-card">
-        <h3 data-i18n="p3.name"></h3>
-        <div class="price" data-i18n="p3.price">$0</div>
-        <small data-i18n="p3.unit"></small>
-        <ul><li data-i18n="p3.li1"></li><li data-i18n="p3.li2"></li><li data-i18n="p3.li3"></li></ul>
-      </div>
-      <div class="price-card feature">
-        <h3 data-i18n="p1.name"></h3>
-        <div class="price" data-i18n="p1.price">$0.80</div>
-        <small data-i18n="p1.unit"></small>
-        <ul><li data-i18n="p1.li1"></li><li data-i18n="p1.li2"></li><li data-i18n="p1.li3"></li></ul>
-      </div>
-      <div class="price-card">
-        <h3 data-i18n="p2.name"></h3>
-        <div class="price" data-i18n="p2.price">$6.88</div>
-        <small data-i18n="p2.unit"></small>
-        <ul><li data-i18n="p2.li1"></li><li data-i18n="p2.li2"></li><li data-i18n="p2.li3"></li></ul>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Corporate Cattle Merit — a quiet desk companion</title>
+  <meta name="description" content="A quiet offline desktop companion. Your typing quietly becomes merit. Free client for Windows and macOS; paid appearance packs.">
+  <meta name="theme-color" content="#f5f5f1">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="motion.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Corporate Cattle Merit">
+        <span class="brand-mark" aria-hidden="true">功</span>
+        <span data-i18n="brand.name">Corporate Cattle Merit</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="zh-Hant" aria-pressed="false">繁</button>
+        <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
       </div>
     </div>
-    <div class="note" data-i18n="q5.d"></div>
-  </section>
+  </header>
 
-  <section id="faq">
-    <h2 data-i18n="faq.title">Frequently asked</h2>
-    <div class="faq-item"><h3 data-i18n="q1.t"></h3><p data-i18n="q1.d"></p></div>
-    <div class="faq-item"><h3 data-i18n="q2.t"></h3><p data-i18n="q2.d"></p></div>
-    <div class="faq-item"><h3 data-i18n="q3.t"></h3><p data-i18n="q3.d"></p></div>
-    <div class="faq-item"><h3 data-i18n="q4.t"></h3><p data-i18n="q4.d"></p></div>
-    <div class="faq-item"><h3 data-i18n="q5.t"></h3><p data-i18n="q5.d"></p></div>
-    <div class="faq-item"><h3 data-i18n="q6.t"></h3><p data-i18n="q6.d"></p></div>
-  </section>
-</main>
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="hero-badge" data-i18n="hero.badge">Free desktop client · Windows &amp; macOS</p>
+        <h1 id="hero-title" data-i18n="hero.h1">Your typing quietly becomes merit.</h1>
+        <p class="hero-lead" data-i18n="hero.lead">A calm, silent companion for your desktop. Every keystroke and click adds a little merit — no account, no internet, nothing tracked but a number.</p>
+        <div class="cta-row">
+          <a class="button button-primary" href="#pricing" data-i18n="hero.cta1">Download for free</a>
+          <a class="text-link" href="#pricing" data-i18n="hero.cta2">See pricing</a>
+        </div>
+      </div>
 
-<footer><div class="wrap">
-  <div class="fnav">
-    <a href="terms.html" data-i18n="foot.terms">Terms of Service</a>
-    <a href="privacy.html" data-i18n="foot.privacy">Privacy Policy</a>
-    <a href="refund.html" data-i18n="foot.refund">Refund Policy</a>
-    <a href="mailto:f104783@outlook.com" data-i18n="foot.contact">Contact</a>
-  </div>
-  <div data-i18n="foot.tag"></div>
-  <p style="font-size:12px;color:#9ca3af;margin-top:10px">© 2026 Corporate Cattle Merit · Sold via Paddle.com · f104783@outlook.com</p>
-</div></footer>
+      <!-- TODO: 替换真实客户端截图；当前仅为木鱼概念线稿，不是客户端 UI。 -->
+      <div class="hero-object" aria-label="Abstract woodfish illustration">
+        <svg class="woodfish" viewBox="0 0 560 520" role="img" aria-labelledby="woodfish-title">
+          <title id="woodfish-title" data-i18n="visual.alt">A minimal line drawing of a woodfish</title>
+          <g class="sound-waves" fill="none">
+            <path d="M376 93c43 12 75 43 89 83"></path>
+            <path d="M396 54c59 17 102 57 123 111"></path>
+          </g>
+          <g class="fish-body" fill="none">
+            <path d="M132 284c-10-81 48-148 132-166 94-20 181 28 195 112 16 96-51 161-150 168-92 7-165-41-177-114Z"></path>
+            <path d="M132 284c42 8 83-3 115-35"></path>
+            <path d="M265 118c12 44 42 75 88 91 37 13 71 15 106 21"></path>
+            <path d="M195 333c39 29 95 40 146 28"></path>
+            <path d="M283 151c-7 16-8 31-2 47"></path>
+            <circle cx="200" cy="217" r="5" class="fish-eye"></circle>
+          </g>
+          <g class="fish-rest" fill="none">
+            <path d="M206 414h208"></path>
+            <path d="M246 398l-12 16m100-16 12 16"></path>
+          </g>
+          <circle class="accent-dot" cx="473" cy="93" r="6"></circle>
+        </svg>
+        <span class="object-caption" data-i18n="visual.caption">A small ritual for the working day.</span>
+      </div>
+    </section>
 
-<script src="dict.js"></script><script src="i18n.js"></script>
-</body></html>
+    <div class="shell">
+      <section class="values" aria-label="Product principles">
+        <p data-i18n="value.local">Local by design</p>
+        <p data-i18n="value.private">Never reads your content</p>
+        <p data-i18n="value.quiet">Quiet when you are busy</p>
+      </section>
+    </div>
+
+    <section id="features" class="section shell" aria-labelledby="features-title">
+      <div class="section-heading">
+        <h2 id="features-title" data-i18n="feat.title">Built to stay out of the way</h2>
+        <p data-i18n="feat.sub">Everything runs locally. Nothing leaves your computer.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 13h20M8 24h13M8 35h20M33 19v16m-8-8h16"></path></svg>
+          <h3 data-i18n="f1.t">Counts, never reads</h3>
+          <p data-i18n="f1.d">It counts key presses and clicks. It never records what you type, your cursor position, window titles or clipboard.</p>
+        </article>
+        <article class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="11" width="32" height="29" rx="2"></rect><path d="M8 20h32M17 7v8m14-8v8M16 27h4m7 0h5m-16 7h4"></path></svg>
+          <h3 data-i18n="f2.t">Merit calendar</h3>
+          <p data-i18n="f2.d">See how much merit each day collected, and revisit your overtime history.</p>
+        </article>
+        <article class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M9 34h30M13 30a11 11 0 0 1 22 0M24 9v5M10 15l4 3m24-3-4 3"></path></svg>
+          <h3 data-i18n="f3.t">Work encourager</h3>
+          <p data-i18n="f3.d">Enter your daily wage and watch today's earnings tick upward as your workday passes.</p>
+        </article>
+        <article class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 8v32h32M13 33l8-11 7 5 11-15"></path><circle cx="39" cy="12" r="2"></circle></svg>
+          <h3 data-i18n="f4.t">Merit curve</h3>
+          <p data-i18n="f4.d">A 15-minute breakdown of when you are busiest, kept for the last 60 days, locally only.</p>
+        </article>
+        <article class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="19" r="11"></circle><path d="m18 28-3 13 9-5 9 5-3-13M20 19l3 3 6-7"></path></svg>
+          <h3 data-i18n="f5.t">Medals</h3>
+          <p data-i18n="f5.d">Daily, weekly and monthly milestones that light up as your merit grows.</p>
+        </article>
+        <article class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M11 30c-3-13 7-22 18-21 12 1 17 12 11 22-5 9-25 10-29-1Z"></path><path d="M12 30c8 1 14-2 18-8M29 9c1 7 5 11 12 13"></path><circle cx="20" cy="20" r="1.5"></circle></svg>
+          <h3 data-i18n="f6.t">Appearance packs</h3>
+          <p data-i18n="f6.d">Swap the woodfish for other characters. The base woodfish is always free.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="section pricing-section" aria-labelledby="pricing-title">
+      <div class="shell">
+        <div class="section-heading">
+          <h2 id="pricing-title" data-i18n="price.title">Simple pricing</h2>
+          <p data-i18n="price.sub">The client is free forever. Pay only for extra appearances.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-item">
+            <h3 data-i18n="p3.name">Desktop client</h3>
+            <p class="price" data-i18n="p3.price">$0</p>
+            <p class="price-unit" data-i18n="p3.unit">free</p>
+            <ul>
+              <li data-i18n="p3.li1">Base woodfish included</li>
+              <li data-i18n="p3.li2">No account, no internet required</li>
+              <li data-i18n="p3.li3">All core features unlocked</li>
+            </ul>
+          </article>
+          <article class="price-item price-item-accent">
+            <h3 data-i18n="p1.name">Appearance pack</h3>
+            <p class="price" data-i18n="p1.price">$0.80</p>
+            <p class="price-unit" data-i18n="p1.unit">first pack · $0.20 each additional</p>
+            <ul>
+              <li data-i18n="p1.li1">Any appearance you like</li>
+              <li data-i18n="p1.li2">Cheaper with every extra pack in the same order</li>
+              <li data-i18n="p1.li3">Yours to keep, import offline anytime</li>
+            </ul>
+          </article>
+          <article class="price-item">
+            <h3 data-i18n="p2.name">Full Unlock</h3>
+            <p class="price" data-i18n="p2.price">$6.88</p>
+            <p class="price-unit" data-i18n="p2.unit">one-time</p>
+            <ul>
+              <li data-i18n="p2.li1">Every current appearance</li>
+              <li data-i18n="p2.li2">All future appearances</li>
+              <li data-i18n="p2.li3">Exclusive VIP designs</li>
+            </ul>
+          </article>
+        </div>
+        <p class="delivery-note" data-i18n="q5.d">After purchase we email you the latest client, the appearance files you bought and your VIP designs. Keep the email for re-download.</p>
+      </div>
+    </section>
+
+    <section id="faq" class="section shell faq-section" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <h2 id="faq-title" data-i18n="faq.title">Frequently asked</h2>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary data-i18n="q1.t">Does it read what I type?</summary>
+          <p data-i18n="q1.d">No. It only counts that a key press or click happened. Content, cursor position, window titles and clipboard are never read or stored.</p>
+        </details>
+        <details>
+          <summary data-i18n="q2.t">Does it need an account or internet?</summary>
+          <p data-i18n="q2.d">No. The client runs fully offline. There is no login, activation or telemetry.</p>
+        </details>
+        <details>
+          <summary data-i18n="q3.t">Where is my data stored?</summary>
+          <p data-i18n="q3.d">All counts, settings and curves stay on your own computer. Nothing is uploaded.</p>
+        </details>
+        <details>
+          <summary data-i18n="q4.t">Can I get a refund?</summary>
+          <p data-i18n="q4.d">Digital goods are delivered instantly and are not refundable at will. If a download or import fails, contact us and we will make it right. See the refund policy.</p>
+        </details>
+        <details>
+          <summary data-i18n="q5.t">How do I receive my purchase?</summary>
+          <p data-i18n="q5.d">After purchase we email you the latest client, the appearance files you bought and your VIP designs. Keep the email for re-download.</p>
+        </details>
+        <details>
+          <summary data-i18n="q6.t">Which systems are supported?</summary>
+          <p data-i18n="q6.d">Windows 10/11 and macOS (Apple Silicon and Intel).</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">功</span><span data-i18n="brand.name">Corporate Cattle Merit</span></a>
+        <p data-i18n="foot.tag">A quiet companion for the working day.</p>
+      </div>
+      <div class="footer-links">
+        <nav aria-label="Legal">
+          <a href="terms.html" data-i18n="foot.terms">Terms of Service</a>
+          <a href="privacy.html" data-i18n="foot.privacy">Privacy Policy</a>
+          <a href="refund.html" data-i18n="foot.refund">Refund Policy</a>
+          <a class="japan-only" href="tokushoho.html" data-i18n="foot.tokushoho">Specified Commercial Transactions Act disclosures</a>
+        </nav>
+        <p><span data-i18n="foot.contact">Contact</span>: <a href="mailto:f104783@outlook.com">f104783@outlook.com</a></p>
+        <p class="copyright">© 2026 Corporate Cattle Merit · Sold via Paddle.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="dict.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>

@@ -20,7 +20,7 @@
     document.querySelectorAll("[data-i18n]").forEach(function(el){
       var k = el.getAttribute("data-i18n");
       var v = (DICT[lang] && DICT[lang][k]) || (DICT.en && DICT.en[k]) || null;
-      if(v!=null) el.innerHTML = v;
+      if(v!=null) el.textContent = v;
     });
     document.querySelectorAll("[data-i18n-ph]").forEach(function(el){
       var k = el.getAttribute("data-i18n-ph");
@@ -28,11 +28,17 @@
       if(v) el.setAttribute("placeholder", v);
     });
     document.querySelectorAll(".lang button").forEach(function(b){
-      b.classList.toggle("active", b.getAttribute("data-lang")===lang);
+      var active = b.getAttribute("data-lang")===lang;
+      b.classList.toggle("active", active);
+      b.setAttribute("aria-pressed", active ? "true" : "false");
     });
     try{ localStorage.setItem("ccm_lang", lang); }catch(e){}
-    var t = (DICT[lang] && DICT[lang]["meta.title"]) || (DICT.en && DICT.en["meta.title"]);
-    if(t) document.title = t;
+    var titleKey = document.body.getAttribute("data-title-key");
+    var t = titleKey ? ((DICT[lang] && DICT[lang][titleKey]) || (DICT.en && DICT.en[titleKey])) : ((DICT[lang] && DICT[lang]["meta.title"]) || (DICT.en && DICT.en["meta.title"]));
+    if(t) {
+      var brand = (DICT[lang] && DICT[lang]["brand.name"]) || (DICT.en && DICT.en["brand.name"]);
+      document.title = titleKey && brand ? t + " — " + brand : t;
+    }
   }
   window.CCM_setLang = function(l){ if(LANGS.indexOf(l)>=0){ apply(l); var u=new URL(location); u.searchParams.set("lang",l); history.replaceState(null,"",u); } };
   document.addEventListener("DOMContentLoaded", function(){
