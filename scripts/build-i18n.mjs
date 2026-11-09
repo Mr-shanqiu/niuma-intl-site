@@ -69,9 +69,7 @@ function jsonLd(lang) {
     operatingSystem: "Windows 10, Windows 11, macOS",
     inLanguage: LANGS,
     offers: [
-      { "@type": "Offer", name: "Desktop client (free)", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock", url: `${urlFor(lang, "index")}#pricing`, seller: { "@type": "Organization", name: "Corporate Cattle Merit" } },
-      { "@type": "Offer", name: "Appearance pack (first pack)", price: "0.80", priceCurrency: "USD", availability: "https://schema.org/InStock", url: `${urlFor(lang, "index")}#pricing`, seller: { "@type": "Organization", name: "Corporate Cattle Merit" } },
-      { "@type": "Offer", name: "Full Unlock (one-time)", price: "6.88", priceCurrency: "USD", availability: "https://schema.org/InStock", url: `${urlFor(lang, "index")}#pricing`, seller: { "@type": "Organization", name: "Corporate Cattle Merit" } },
+      { "@type": "Offer", name: "Complete pack — client 9.6 + all current and future appearances", price: "3.60", priceCurrency: "USD", availability: "https://schema.org/InStock", url: `${urlFor(lang, "index")}#pricing`, seller: { "@type": "Organization", name: "Corporate Cattle Merit" } },
     ],
   };
   return `  <script type="application/ld+json">\n${JSON.stringify(data, null, 2)}\n  </script>`;

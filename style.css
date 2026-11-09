@@ -309,6 +309,26 @@ html[lang="ja"] .feature-item p { line-height: 1.95; }
 .price-item li::before { content: ""; position: absolute; top: .75em; left: 0; width: 6px; height: 2px; background: var(--accent-bright); }
 .price-link { align-self: flex-start; margin-top: 26px; }
 .delivery-note { max-width: 760px; margin: 36px 0 0; color: var(--muted); font-size: 13px; line-height: 1.8; }
+
+/* Single all-in-one purchase card and the download page purchase CTA. */
+.pricing-grid-single { grid-template-columns: minmax(0, 680px); justify-content: center; }
+.price-item-single { padding: 40px; }
+.price-kicker { margin: 0 0 10px; color: var(--accent); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.price-item-single h3 { font-size: 22px; }
+.price-item-single .price { margin-top: 18px; }
+.price-item-single .price-unit { min-height: 0; }
+.price-item-single ul { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; }
+.price-cta { align-self: flex-start; margin-top: 32px; min-height: 54px; padding: 15px 32px; font-size: 16px; }
+.button-large { min-height: 56px; padding: 16px 36px; font-size: 16px; }
+.purchase-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; margin: 0 0 40px; padding: 28px 30px; border: 1px solid rgba(222, 212, 196, .85); border-radius: 20px; background: var(--card); box-shadow: 0 12px 36px rgba(90, 58, 30, .06); }
+.purchase-note { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.platform-after { margin: 24px 0 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+@media (max-width: 560px) {
+  .price-item-single { padding: 28px; }
+  .price-item-single ul { grid-template-columns: 1fr; }
+  .purchase-cta { padding: 22px; }
+  .button-large { width: 100%; }
+}
 .faq-section { padding-bottom: 112px; }
 .faq-section .section-heading { display: block; margin-bottom: 40px; }
 .faq-list { display: grid; gap: 12px; }

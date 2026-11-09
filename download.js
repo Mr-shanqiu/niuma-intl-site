@@ -34,7 +34,7 @@
       }
     });
 
-    document.querySelectorAll("[data-download-link][aria-disabled='true']").forEach(function (link) {
+    document.querySelectorAll("[data-download-link][aria-disabled='true'], [data-purchase-link][aria-disabled='true']").forEach(function (link) {
       link.addEventListener("click", function (event) {
         event.preventDefault();
       });

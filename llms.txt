@@ -1,8 +1,8 @@
 # Corporate Cattle Merit (賽博社畜功德 / サイバー社畜功徳)
 
 > A quiet, fully offline desktop companion. Every keystroke and click quietly
-> accrues a little "merit". The client is free for Windows and macOS; paid
-> appearance packs and a one-time full unlock are optional.
+> accrues a little "merit". One one-time purchase of US$3.60 includes the client
+> for Windows and macOS, the base woodfish and every current and future appearance.
 
 ## What it is
 
@@ -15,10 +15,12 @@
 
 ## Pricing (USD)
 
-- Desktop client: $0 (free, includes the base woodfish and all core features)
-- Appearance pack: $0.80 for the first pack, $0.20 for each additional pack in the same order
-- Full Unlock: $6.88 one-time (every current and future appearance, plus exclusive VIP designs)
-- Payments are processed by Paddle.com, the Merchant of Record.
+- Complete pack: US$3.60, one-time. Includes client 9.6 with every feature
+  (merit calendar, work progress, merit curve, cultivation rank, multilingual UI),
+  the base woodfish, every current appearance, one exclusive VIP appearance and
+  all future appearances.
+- There is no subscription and no entry-level tier. Payments are processed by
+  Paddle.com, the Merchant of Record.
 
 ## System requirements
 
@@ -52,10 +54,13 @@ Legal pages (replace the language prefix with en / zh-Hant / ja):
 - Does it read what I type? No. It only counts that a key press or click happened.
 - Does it need an account or internet? No. It runs fully offline, with no login or telemetry.
 - Where is my data stored? Only on your own computer. Nothing is uploaded.
-- How do I receive a purchase? After payment we email the latest client, the appearance
-  files you bought, and your VIP designs; keep the email to re-download.
-- Can I get a refund? Digital goods are delivered instantly and are not refundable at will;
-  if a download or import fails, contact support and it will be made right.
+- What do I get? One US$3.60 purchase unlocks client 9.6, the base woodfish, every
+  current appearance, one exclusive VIP appearance and all future appearances.
+- How do I receive a purchase? After payment we email the download link for Windows or
+  macOS together with your appearance files; keep the email to re-download.
+- Can I get a refund? This is digital content delivered instantly, so there is no refund
+  for a change of mind; if a download or import fails or you were charged twice, contact
+  support within 30 days and it will be fixed or refunded.
 
 ## Seller
 
