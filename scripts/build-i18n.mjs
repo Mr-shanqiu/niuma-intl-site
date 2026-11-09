@@ -18,9 +18,12 @@ const ROOT = path.resolve(__dirname, "..");
 const TEMPLATES = path.join(ROOT, "templates");
 
 const SITE = "https://merit.zqscreen.cn";
-const LANGS = ["en", "zh-Hant", "ja"];
+const LANGS = ["en", "zh-Hant", "ja", "ko", "th", "fr", "es", "de"];
+const AI_DRAFT_LANGS = new Set(["ko", "th", "fr", "es", "de"]);
 const PAGES = ["index", "download", "terms", "privacy", "refund", "tokushoho"];
-const OG_LOCALE = { en: "en_US", "zh-Hant": "zh_TW", ja: "ja_JP" };
+const OG_LOCALE = { en: "en_US", "zh-Hant": "zh_TW", ja: "ja_JP", ko: "ko_KR", th: "th_TH", fr: "fr_FR", es: "es_ES", de: "de_DE" };
+const LANG_LABEL = { en: "English", "zh-Hant": "繁體中文", ja: "日本語", ko: "한국어", th: "ไทย", fr: "Français", es: "Español", de: "Deutsch" };
+const LANG_SHORT = { en: "EN", "zh-Hant": "繁中", ja: "日本語", ko: "한국어", th: "ไทย", fr: "FR", es: "ES", de: "DE" };
 const LAST_MOD = "2026-11-10";
 
 // ---- load dictionary (dict.js assigns window.CCM_I18N) --------------------
@@ -141,12 +144,16 @@ ${page === "index" ? jsonLd(lang) : ""}
 }
 
 function langSwitcher(lang, page) {
-  const mk = (l, label) =>
-    `        <a href="../${l}/${fileFor(page)}"${l === lang ? ' aria-current="true"' : ""}>${label}</a>`;
+  const items = LANGS.map((l) =>
+    `          <li><a href="../${l}/${fileFor(page)}" hreflang="${l}" lang="${l}"${l === lang ? ' aria-current="true"' : ""}>${LANG_LABEL[l]}</a></li>`
+  ).join("\n");
   return `<div class="lang" role="group" aria-label="${esc(pick(lang, "aria.language"))}">
-${mk("en", "EN")}
-${mk("zh-Hant", "繁")}
-${mk("ja", "日本語")}
+        <details class="lang-switch">
+          <summary aria-label="${esc(pick(lang, "aria.language"))}">${LANG_SHORT[lang]}</summary>
+          <ul class="lang-list">
+${items}
+          </ul>
+        </details>
       </div>`;
 }
 
@@ -191,7 +198,7 @@ function buildPage(lang, page) {
   if (bodyIdx === -1) throw new Error(`No <body> in template ${page}`);
   const body = localizeBody(template.slice(bodyIdx), lang, page);
   return `<!doctype html>
-<html lang="${lang}">
+<html lang="${lang}"${AI_DRAFT_LANGS.has(lang) ? ' data-translation="ai-draft" data-review="pending-native-review"' : ""}>
 ${buildHead(lang, page)}
 ${body}`;
 }

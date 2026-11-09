@@ -35,6 +35,12 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+/* Longer-language safety net: allow long words (German, Thai strings without
+   spaces) to wrap instead of forcing grids/flex items wider than the viewport. */
+html { overflow-wrap: anywhere; }
+.hero-copy, .hero-card, .section-heading > *, .feature-text, .price-item,
+.legal-intro, .legal-article, .download-intro > *, .download-intro-copy,
+.platform-card, .footer-grid > *, .footer-links { min-width: 0; }
 button, a { -webkit-tap-highlight-color: transparent; }
 a { color: inherit; }
 button { font: inherit; }
@@ -134,6 +140,56 @@ svg { display: block; }
 }
 .lang button:hover, .lang a:hover { color: var(--ink); }
 .lang button.active, .lang a[aria-current="true"] { background: var(--ink); color: var(--paper); }
+
+/* 8-language switcher: a compact dropdown that keeps the header tidy. Works
+   without JavaScript because it is built on <details>/<summary>. */
+.lang-switch { position: relative; }
+.lang-switch > summary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 32px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.2;
+  cursor: pointer;
+  list-style: none;
+  transition: background-color .2s ease, color .2s ease;
+}
+.lang-switch > summary::-webkit-details-marker { display: none; }
+.lang-switch > summary:hover { color: var(--ink); }
+.lang-switch[open] > summary { background: var(--ink); color: var(--paper); }
+.lang-list {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 40;
+  display: grid;
+  gap: 2px;
+  min-width: 176px;
+  margin: 0;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  list-style: none;
+}
+.lang-list a {
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  padding: 9px 12px;
+  border-radius: 9px;
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: none;
+}
+.lang-list a:hover { background: var(--surface); color: var(--ink); }
+.lang-list a[aria-current="true"] { background: var(--ink); color: var(--paper); }
 
 /* Approved hero: desk photograph, warm overlay, rendered woodfish card. */
 .hero-stage { position: relative; isolation: isolate; overflow: hidden; }

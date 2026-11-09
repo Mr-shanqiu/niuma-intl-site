@@ -36,13 +36,26 @@ Choose a language (each has its own indexable static path):
 - English: https://merit.zqscreen.cn/en/
 - Traditional Chinese (繁體中文): https://merit.zqscreen.cn/zh-Hant/
 - Japanese (日本語): https://merit.zqscreen.cn/ja/
+- Korean (한국어): https://merit.zqscreen.cn/ko/
+- Thai (ไทย): https://merit.zqscreen.cn/th/
+- French (Français): https://merit.zqscreen.cn/fr/
+- Spanish (Español): https://merit.zqscreen.cn/es/
+- German (Deutsch): https://merit.zqscreen.cn/de/
 - Language landing page: https://merit.zqscreen.cn/
+
+Note: the Korean, Thai, French, Spanish and German translations are AI drafts
+pending native review.
 
 Downloads:
 
 - English: https://merit.zqscreen.cn/en/download.html
 - Traditional Chinese: https://merit.zqscreen.cn/zh-Hant/download.html
 - Japanese: https://merit.zqscreen.cn/ja/download.html
+- Korean: https://merit.zqscreen.cn/ko/download.html
+- Thai: https://merit.zqscreen.cn/th/download.html
+- French: https://merit.zqscreen.cn/fr/download.html
+- Spanish: https://merit.zqscreen.cn/es/download.html
+- German: https://merit.zqscreen.cn/de/download.html
 
 Legal pages (replace the language prefix with en / zh-Hant / ja):
 
