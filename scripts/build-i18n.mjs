@@ -71,7 +71,7 @@ function jsonLd(lang) {
     offers: [
       { "@type": "Offer", name: "Client 9.6 (one-time)", price: "0.80", priceCurrency: "USD", availability: "https://schema.org/InStock", url: `${urlFor(lang, "index")}#pricing`, seller: { "@type": "Organization", name: "Corporate Cattle Merit" } },
       { "@type": "Offer", name: "Appearance (US$0.20 each; with the client or 4 at a time)", price: "0.20", priceCurrency: "USD", availability: "https://schema.org/InStock", url: `${urlFor(lang, "index")}#pricing`, seller: { "@type": "Organization", name: "Corporate Cattle Merit" } },
-      { "@type": "Offer", name: "Complete pack — client + all current and future appearances", price: "3.60", priceCurrency: "USD", availability: "https://schema.org/InStock", url: `${urlFor(lang, "index")}#pricing`, seller: { "@type": "Organization", name: "Corporate Cattle Merit" } },
+      { "@type": "Offer", name: "Complete pack — client + all current and future appearances", price: "5.88", priceCurrency: "USD", availability: "https://schema.org/InStock", url: `${urlFor(lang, "index")}#pricing`, seller: { "@type": "Organization", name: "Corporate Cattle Merit" } },
     ],
   };
   return `  <script type="application/ld+json">\n${JSON.stringify(data, null, 2)}\n  </script>`;

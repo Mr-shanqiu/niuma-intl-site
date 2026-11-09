@@ -2,7 +2,7 @@
 
 > A quiet, fully offline desktop companion. Every keystroke and click quietly
 > accrues a little "merit". Buy the client once for US$0.80, add appearances at
-> US$0.20 each (with the client, or 4 at a time), or take the US$3.60 Complete pack
+> US$0.20 each (with the client, or 4 at a time), or take the US$5.88 Complete pack
 > with every current and future appearance.
 
 ## What it is
@@ -20,7 +20,7 @@
   work progress, merit curve, cultivation rank, multilingual UI) and the base woodfish.
 - Appearances: US$0.20 each. Bought together with the client, or from 4 at a time
   (4 = US$0.80). A single appearance is not sold on its own.
-- Complete pack: US$3.60, one-time. Client 9.6, every current appearance, one
+- Complete pack: US$5.88, one-time. Client 9.6, every current appearance, one
   exclusive VIP appearance and all future appearances.
 - There is no subscription. Payments are processed by Paddle.com, the Merchant of Record.
 
@@ -57,7 +57,7 @@ Legal pages (replace the language prefix with en / zh-Hant / ja):
 - Does it need an account or internet? No. It runs fully offline, with no login or telemetry.
 - Where is my data stored? Only on your own computer. Nothing is uploaded.
 - What do I get? Client 9.6 is US$0.80; appearances are US$0.20 each (with the client
-  or 4 at a time); the Complete pack is US$3.60 with the client, all current appearances,
+  or 4 at a time); the Complete pack is US$5.88 with the client, all current appearances,
   one VIP appearance and all future appearances.
 - How do I receive a purchase? After payment we email the download link for Windows or
   macOS together with your appearance files; keep the email to re-download.
