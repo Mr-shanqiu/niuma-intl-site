@@ -157,50 +157,76 @@
         <h2 id="features-title" data-i18n="feat.title">邪魔をしない設計</h2>
         <p data-i18n="feat.sub">すべて端末内で完結。何も外部に送信しません。</p>
       </div>
-      <div class="feature-grid">
-        <article class="feature-item">
-          <div class="feature-visual icon-visual">
-            <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 13h20M8 24h13M8 35h20M33 19v16m-8-8h16"></path></svg>
+
+      <div class="feature-showcase" data-feature-showcase>
+        <div class="feature-nav">
+          <div class="feature-tabs" role="tablist" aria-label="機能紹介" data-i18n-aria="aria.featureTabs">
+            <button type="button" role="tab" id="ftab-1" aria-controls="fpanel-1" aria-selected="true" data-i18n="tab.1">功徳カウント</button>
+            <button type="button" role="tab" id="ftab-2" aria-controls="fpanel-2" aria-selected="false" tabindex="-1" data-i18n="tab.2">仕事の進捗</button>
+            <button type="button" role="tab" id="ftab-3" aria-controls="fpanel-3" aria-selected="false" tabindex="-1" data-i18n="tab.3">功徳カレンダー</button>
+            <button type="button" role="tab" id="ftab-4" aria-controls="fpanel-4" aria-selected="false" tabindex="-1" data-i18n="tab.4">隠し要素</button>
+            <button type="button" role="tab" id="ftab-5" aria-controls="fpanel-5" aria-selected="false" tabindex="-1" data-i18n="tab.5">ステルス計数</button>
           </div>
-          <h3 data-i18n="f1.t">数えるだけ、読まない</h3>
-          <p data-i18n="f1.d">キー入力とクリックの回数だけを数えます。入力内容・カーソル位置・ウィンドウ名・クリップボードは記録しません。</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual">
-            <img class="feature-shot feature-calendar" src="../assets/calendar-095.png" alt="実際のクライアントのカレンダー画面（中国語UI）" data-i18n-alt="shot.calendar" loading="lazy" width="1440" height="1448">
+          <div class="feature-arrows">
+            <button type="button" class="feature-arrow" data-feature-dir="prev" aria-label="前の機能" data-i18n-aria="aria.featurePrev"><span aria-hidden="true">‹</span></button>
+            <button type="button" class="feature-arrow" data-feature-dir="next" aria-label="次の機能" data-i18n-aria="aria.featureNext"><span aria-hidden="true">›</span></button>
           </div>
-          <h3 data-i18n="f2.t">功徳カレンダー</h3>
-          <p data-i18n="f2.d">毎日どれだけ功徳が貯まったかを確認。残業の記録も振り返れます。</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual phone-visual">
-            <img src="../assets/offwork-countdown.jpg" alt="実際のクライアントの退勤カウントダウン（中国語UI）" data-i18n-alt="shot.countdown" loading="lazy" width="240" height="346">
-            <img src="../assets/offwork-overtime.jpg" alt="実際のクライアントの残業画面（中国語UI）" data-i18n-alt="shot.overtime" loading="lazy" width="240" height="346">
-          </div>
-          <h3 data-i18n="f3.t">仕事エンカレッジャー</h3>
-          <p data-i18n="f3.d">日給を入力すると、勤務時間の経過とともに「今日の稼ぎ」が増えていきます。</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual icon-visual">
-            <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 8v32h32M13 33l8-11 7 5 11-15"></path><circle cx="39" cy="12" r="2"></circle></svg>
-          </div>
-          <h3 data-i18n="f4.t">社畜カーブ</h3>
-          <p data-i18n="f4.d">15分ごとの忙しさを可視化。直近60日分を端末内にのみ保存します。</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual icon-visual">
-            <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="19" r="11"></circle><path d="m18 28-3 13 9-5 9 5-3-13M20 19l3 3 6-7"></path></svg>
-          </div>
-          <h3 data-i18n="f5.t">レベル</h3>
-          <p data-i18n="f5.d">日・週・月のマイルストーン。功徳が増えると点灯します。</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual appearance-visual">
-            <img src="../assets/woodfish.svg" alt="白いカード上の写実的な木魚" data-i18n-alt="visual.alt" loading="lazy" width="480" height="340">
-          </div>
-          <h3 data-i18n="f6.t">アバター素材</h3>
-          <p data-i18n="f6.d">木魚を別のキャラクターに。基本の木魚はいつでも無料です。</p>
-        </article>
+        </div>
+
+        <div class="feature-stage" data-feature-panels>
+          <article class="feature-panel is-active" id="fpanel-1" role="tabpanel" aria-labelledby="ftab-1" tabindex="0">
+            <div class="feature-frame feature-frame-fish">
+              <img src="../assets/woodfish.svg" alt="実際のクライアントの木魚（中国語UI）" data-i18n-alt="shot.count" width="480" height="340">
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft1.t">打つたび、クリックするたび、功徳に。</h3>
+              <p data-i18n="ft1.d">キー入力・クリック・スクロールの回数だけを数え、木魚が反応します。入力内容・カーソル位置・ウィンドウ名・クリップボードは記録しません。貯まった功徳は修行ランクにも反映されます（巡礼者から宗師までの6段階）。</p>
+            </div>
+          </article>
+
+          <article class="feature-panel" id="fpanel-2" role="tabpanel" aria-labelledby="ftab-2" tabindex="0">
+            <div class="feature-frame feature-frame-pair">
+              <figure class="shot-pair">
+                <img src="../assets/offwork-countdown.jpg" alt="実際のクライアントの退勤カウントダウン（中国語UI）" data-i18n-alt="shot.countdown" width="240" height="346">
+                <img src="../assets/offwork-overtime.jpg" alt="実際のクライアントの残業画面（中国語UI）" data-i18n-alt="shot.overtime" width="240" height="346">
+              </figure>
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft2.t">退勤まで、あとどれくらい？</h3>
+              <p data-i18n="ft2.d">退勤時刻を設定すると、進捗バー・カウントダウン・今日の残業がひと目で。今日の稼ぎ表示にも切り替えられます。</p>
+            </div>
+          </article>
+
+          <article class="feature-panel" id="fpanel-3" role="tabpanel" aria-labelledby="ftab-3" tabindex="0">
+            <div class="feature-frame feature-frame-calendar">
+              <img src="../assets/calendar-095.png" alt="実際のクライアントのカレンダー画面（中国語UI）" data-i18n-alt="shot.calendar" width="1440" height="1448">
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft3.t">今月も、功徳はちゃんと貯まる。</h3>
+              <p data-i18n="ft3.d">カレンダーを開けば、毎日の功徳と残業の記録を振り返れます。</p>
+            </div>
+          </article>
+
+          <article class="feature-panel" id="fpanel-4" role="tabpanel" aria-labelledby="ftab-4" tabindex="0">
+            <div class="feature-frame feature-frame-bubble">
+              <img src="../assets/bubble-zh.png" alt="実際のクライアントの励ましバブル（中国語UI）" data-i18n-alt="shot.bubble" width="260" height="84">
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft4.t">忙しくなると、話しかけてくる。</h3>
+              <p data-i18n="ft4.d">クライアントに隠れた彩蛋（イースターエッグ）。操作が密集すると、ちょっとした小言が顔を出します。決まった時間には出ません。</p>
+            </div>
+          </article>
+
+          <article class="feature-panel" id="fpanel-5" role="tabpanel" aria-labelledby="ftab-5" tabindex="0">
+            <div class="feature-frame feature-frame-conceal">
+              <img src="../assets/woodfish.svg" alt="キャラクターを隠しても計数は継続（イメージ）" data-i18n-alt="shot.visibility" width="480" height="340">
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft5.t">集中したい時は、そっと退避。</h3>
+              <p data-i18n="ft5.d">手動で隠しても功徳は貯まり続け、アプリの最大化・全画面時には自動で隠れ、戻すとまた現れます。</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 

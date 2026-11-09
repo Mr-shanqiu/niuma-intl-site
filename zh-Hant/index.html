@@ -157,50 +157,76 @@
         <h2 id="features-title" data-i18n="feat.title">安靜待在旁邊就好</h2>
         <p data-i18n="feat.sub">全部在本機執行，什麼都不會離開你的電腦。</p>
       </div>
-      <div class="feature-grid">
-        <article class="feature-item">
-          <div class="feature-visual icon-visual">
-            <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 13h20M8 24h13M8 35h20M33 19v16m-8-8h16"></path></svg>
+
+      <div class="feature-showcase" data-feature-showcase>
+        <div class="feature-nav">
+          <div class="feature-tabs" role="tablist" aria-label="功能展示" data-i18n-aria="aria.featureTabs">
+            <button type="button" role="tab" id="ftab-1" aria-controls="fpanel-1" aria-selected="true" data-i18n="tab.1">功德計數</button>
+            <button type="button" role="tab" id="ftab-2" aria-controls="fpanel-2" aria-selected="false" tabindex="-1" data-i18n="tab.2">上班進度</button>
+            <button type="button" role="tab" id="ftab-3" aria-controls="fpanel-3" aria-selected="false" tabindex="-1" data-i18n="tab.3">功德日曆</button>
+            <button type="button" role="tab" id="ftab-4" aria-controls="fpanel-4" aria-selected="false" tabindex="-1" data-i18n="tab.4">隱藏彩蛋</button>
+            <button type="button" role="tab" id="ftab-5" aria-controls="fpanel-5" aria-selected="false" tabindex="-1" data-i18n="tab.5">隱身計數</button>
           </div>
-          <h3 data-i18n="f1.t">只計數，不讀內容</h3>
-          <p data-i18n="f1.d">只統計按鍵與點擊的次數，不記錄你打了什麼、滑鼠位置、視窗標題或剪貼簿。</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual">
-            <img class="feature-shot feature-calendar" src="../assets/calendar-095.png" alt="真實客戶端功德日曆（畫面為簡體中文）" data-i18n-alt="shot.calendar" loading="lazy" width="1440" height="1448">
+          <div class="feature-arrows">
+            <button type="button" class="feature-arrow" data-feature-dir="prev" aria-label="上一項" data-i18n-aria="aria.featurePrev"><span aria-hidden="true">‹</span></button>
+            <button type="button" class="feature-arrow" data-feature-dir="next" aria-label="下一項" data-i18n-aria="aria.featureNext"><span aria-hidden="true">›</span></button>
           </div>
-          <h3 data-i18n="f2.t">功德日曆</h3>
-          <p data-i18n="f2.d">看看每天攢了多少功德，也能回看留下的加班紀錄。</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual phone-visual">
-            <img src="../assets/offwork-countdown.jpg" alt="真實客戶端下班倒數（畫面為簡體中文）" data-i18n-alt="shot.countdown" loading="lazy" width="240" height="346">
-            <img src="../assets/offwork-overtime.jpg" alt="真實客戶端加班畫面（畫面為簡體中文）" data-i18n-alt="shot.overtime" loading="lazy" width="240" height="346">
-          </div>
-          <h3 data-i18n="f3.t">上班鼓勵器</h3>
-          <p data-i18n="f3.d">填入日薪，隨著上班時間過去，今日已賺的數字會一直往上跳。</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual icon-visual">
-            <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 8v32h32M13 33l8-11 7 5 11-15"></path><circle cx="39" cy="12" r="2"></circle></svg>
-          </div>
-          <h3 data-i18n="f4.t">牛馬曲線</h3>
-          <p data-i18n="f4.d">以 15 分鐘為單位，看哪個時段最忙；只保留最近 60 天，全部留在本機。</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual icon-visual">
-            <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="19" r="11"></circle><path d="m18 28-3 13 9-5 9 5-3-13M20 19l3 3 6-7"></path></svg>
-          </div>
-          <h3 data-i18n="f5.t">等級</h3>
-          <p data-i18n="f5.d">日、週、月的里程碑，隨著功德累積逐一點亮。</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual appearance-visual">
-            <img src="../assets/woodfish.svg" alt="白色卡片上的寫實木魚" data-i18n-alt="visual.alt" loading="lazy" width="480" height="340">
-          </div>
-          <h3 data-i18n="f6.t">形象包</h3>
-          <p data-i18n="f6.d">把木魚換成別的角色；基礎木魚永久免費。</p>
-        </article>
+        </div>
+
+        <div class="feature-stage" data-feature-panels>
+          <article class="feature-panel is-active" id="fpanel-1" role="tabpanel" aria-labelledby="ftab-1" tabindex="0">
+            <div class="feature-frame feature-frame-fish">
+              <img src="../assets/woodfish.svg" alt="真實客戶端木魚（畫面為簡體中文）" data-i18n-alt="shot.count" width="480" height="340">
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft1.t">每次敲鍵、每次點擊，都算數</h3>
+              <p data-i18n="ft1.d">只統計按鍵、點擊與滾動的次數，木魚也跟著動起來；你打了什麼、滑鼠位置、視窗標題或剪貼簿，一概不記錄。累積的功德還會提升修行等級——從香客到宗師，共六級。</p>
+            </div>
+          </article>
+
+          <article class="feature-panel" id="fpanel-2" role="tabpanel" aria-labelledby="ftab-2" tabindex="0">
+            <div class="feature-frame feature-frame-pair">
+              <figure class="shot-pair">
+                <img src="../assets/offwork-countdown.jpg" alt="真實客戶端下班倒數（畫面為簡體中文）" data-i18n-alt="shot.countdown" width="240" height="346">
+                <img src="../assets/offwork-overtime.jpg" alt="真實客戶端加班畫面（畫面為簡體中文）" data-i18n-alt="shot.overtime" width="240" height="346">
+              </figure>
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft2.t">看看今天，還差多久下班</h3>
+              <p data-i18n="ft2.d">設好下班時間，就有進度條、即時倒數與今日加班；還能切換看今日已賺，一眼掌握。</p>
+            </div>
+          </article>
+
+          <article class="feature-panel" id="fpanel-3" role="tabpanel" aria-labelledby="ftab-3" tabindex="0">
+            <div class="feature-frame feature-frame-calendar">
+              <img src="../assets/calendar-095.png" alt="真實客戶端功德日曆（畫面為簡體中文）" data-i18n-alt="shot.calendar" width="1440" height="1448">
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft3.t">這個月，功德沒少攢</h3>
+              <p data-i18n="ft3.d">打開日曆，看看每天攢了多少功德，也能回看留下的加班紀錄。</p>
+            </div>
+          </article>
+
+          <article class="feature-panel" id="fpanel-4" role="tabpanel" aria-labelledby="ftab-4" tabindex="0">
+            <div class="feature-frame feature-frame-bubble">
+              <img src="../assets/bubble-zh.png" alt="真實客戶端鼓勵氣泡（畫面為簡體中文）" data-i18n-alt="shot.bubble" width="260" height="84">
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft4.t">忙到一個程度，它會開口</h3>
+              <p data-i18n="ft4.d">客戶端裡的隱藏彩蛋：操作密集時，冒出一句損友式關心，不是固定時間彈一次。</p>
+            </div>
+          </article>
+
+          <article class="feature-panel" id="fpanel-5" role="tabpanel" aria-labelledby="ftab-5" tabindex="0">
+            <div class="feature-frame feature-frame-conceal">
+              <img src="../assets/woodfish.svg" alt="形象隱藏後仍持續計數（示意）" data-i18n-alt="shot.visibility" width="480" height="340">
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft5.t">需要專注，就讓它退到一邊</h3>
+              <p data-i18n="ft5.d">手動隱藏後功德繼續累積；套用最大化或全螢幕時自動退開，回到視窗再出現。</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 

@@ -157,50 +157,76 @@
         <h2 id="features-title" data-i18n="feat.title">Built to stay out of the way</h2>
         <p data-i18n="feat.sub">Everything runs locally. Nothing leaves your computer.</p>
       </div>
-      <div class="feature-grid">
-        <article class="feature-item">
-          <div class="feature-visual icon-visual">
-            <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 13h20M8 24h13M8 35h20M33 19v16m-8-8h16"></path></svg>
+
+      <div class="feature-showcase" data-feature-showcase>
+        <div class="feature-nav">
+          <div class="feature-tabs" role="tablist" aria-label="Feature showcase" data-i18n-aria="aria.featureTabs">
+            <button type="button" role="tab" id="ftab-1" aria-controls="fpanel-1" aria-selected="true" data-i18n="tab.1">Merit count</button>
+            <button type="button" role="tab" id="ftab-2" aria-controls="fpanel-2" aria-selected="false" tabindex="-1" data-i18n="tab.2">Work progress</button>
+            <button type="button" role="tab" id="ftab-3" aria-controls="fpanel-3" aria-selected="false" tabindex="-1" data-i18n="tab.3">Merit calendar</button>
+            <button type="button" role="tab" id="ftab-4" aria-controls="fpanel-4" aria-selected="false" tabindex="-1" data-i18n="tab.4">Hidden easter egg</button>
+            <button type="button" role="tab" id="ftab-5" aria-controls="fpanel-5" aria-selected="false" tabindex="-1" data-i18n="tab.5">Stealth counting</button>
           </div>
-          <h3 data-i18n="f1.t">Counts, never reads</h3>
-          <p data-i18n="f1.d">It counts key presses and clicks. It never records what you type, your cursor position, window titles or clipboard.</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual">
-            <img class="feature-shot feature-calendar" src="../assets/calendar-095.png" alt="Real client calendar view (Chinese UI shown)" data-i18n-alt="shot.calendar" loading="lazy" width="1440" height="1448">
+          <div class="feature-arrows">
+            <button type="button" class="feature-arrow" data-feature-dir="prev" aria-label="Previous feature" data-i18n-aria="aria.featurePrev"><span aria-hidden="true">‹</span></button>
+            <button type="button" class="feature-arrow" data-feature-dir="next" aria-label="Next feature" data-i18n-aria="aria.featureNext"><span aria-hidden="true">›</span></button>
           </div>
-          <h3 data-i18n="f2.t">Merit calendar</h3>
-          <p data-i18n="f2.d">See how much merit each day collected, and revisit your overtime history.</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual phone-visual">
-            <img src="../assets/offwork-countdown.jpg" alt="Real client off-work countdown (Chinese UI shown)" data-i18n-alt="shot.countdown" loading="lazy" width="240" height="346">
-            <img src="../assets/offwork-overtime.jpg" alt="Real client overtime view (Chinese UI shown)" data-i18n-alt="shot.overtime" loading="lazy" width="240" height="346">
-          </div>
-          <h3 data-i18n="f3.t">Work encourager</h3>
-          <p data-i18n="f3.d">Enter your daily wage and watch today's earnings tick upward as your workday passes.</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual icon-visual">
-            <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 8v32h32M13 33l8-11 7 5 11-15"></path><circle cx="39" cy="12" r="2"></circle></svg>
-          </div>
-          <h3 data-i18n="f4.t">Merit curve</h3>
-          <p data-i18n="f4.d">A 15-minute breakdown of when you are busiest, kept for the last 60 days, locally only.</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual icon-visual">
-            <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="19" r="11"></circle><path d="m18 28-3 13 9-5 9 5-3-13M20 19l3 3 6-7"></path></svg>
-          </div>
-          <h3 data-i18n="f5.t">Levels</h3>
-          <p data-i18n="f5.d">Daily, weekly and monthly milestones that light up as your merit grows.</p>
-        </article>
-        <article class="feature-item">
-          <div class="feature-visual appearance-visual">
-            <img src="../assets/woodfish.svg" alt="A rendered wooden fish on a soft white card" data-i18n-alt="visual.alt" loading="lazy" width="480" height="340">
-          </div>
-          <h3 data-i18n="f6.t">Appearance packs</h3>
-          <p data-i18n="f6.d">Swap the woodfish for other characters. The base woodfish is always free.</p>
-        </article>
+        </div>
+
+        <div class="feature-stage" data-feature-panels>
+          <article class="feature-panel is-active" id="fpanel-1" role="tabpanel" aria-labelledby="ftab-1" tabindex="0">
+            <div class="feature-frame feature-frame-fish">
+              <img src="../assets/woodfish.svg" alt="Real client woodfish (Chinese UI shown)" data-i18n-alt="shot.count" width="480" height="340">
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft1.t">Every keystroke and click adds up</h3>
+              <p data-i18n="ft1.d">It counts key presses, clicks and scrolls, and the woodfish reacts. It never records what you type, your cursor position, window titles or clipboard. The merit you gather also raises your cultivation rank — six levels, from Pilgrim to Grandmaster.</p>
+            </div>
+          </article>
+
+          <article class="feature-panel" id="fpanel-2" role="tabpanel" aria-labelledby="ftab-2" tabindex="0">
+            <div class="feature-frame feature-frame-pair">
+              <figure class="shot-pair">
+                <img src="../assets/offwork-countdown.jpg" alt="Real client off-work countdown (Chinese UI shown)" data-i18n-alt="shot.countdown" width="240" height="346">
+                <img src="../assets/offwork-overtime.jpg" alt="Real client overtime view (Chinese UI shown)" data-i18n-alt="shot.overtime" width="240" height="346">
+              </figure>
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft2.t">Clock out, and see the day's progress</h3>
+              <p data-i18n="ft2.d">Set your finish time for a progress bar, a live countdown and today's overtime — switch to today's earnings at a glance.</p>
+            </div>
+          </article>
+
+          <article class="feature-panel" id="fpanel-3" role="tabpanel" aria-labelledby="ftab-3" tabindex="0">
+            <div class="feature-frame feature-frame-calendar">
+              <img src="../assets/calendar-095.png" alt="Real client calendar view (Chinese UI shown)" data-i18n-alt="shot.calendar" width="1440" height="1448">
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft3.t">This month, the merit adds up</h3>
+              <p data-i18n="ft3.d">Open the calendar to see how much merit each day collected and revisit your overtime history.</p>
+            </div>
+          </article>
+
+          <article class="feature-panel" id="fpanel-4" role="tabpanel" aria-labelledby="ftab-4" tabindex="0">
+            <div class="feature-frame feature-frame-bubble">
+              <img src="../assets/bubble-zh.png" alt="Real client encouragement bubble (Chinese UI shown)" data-i18n-alt="shot.bubble" width="260" height="84">
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft4.t">Busy enough, and it speaks</h3>
+              <p data-i18n="ft4.d">A hidden easter egg: when your actions pile up, a friendly jab pops up — never on a fixed timer.</p>
+            </div>
+          </article>
+
+          <article class="feature-panel" id="fpanel-5" role="tabpanel" aria-labelledby="ftab-5" tabindex="0">
+            <div class="feature-frame feature-frame-conceal">
+              <img src="../assets/woodfish.svg" alt="Character hidden while counting continues (illustration)" data-i18n-alt="shot.visibility" width="480" height="340">
+            </div>
+            <div class="feature-text">
+              <h3 data-i18n="ft5.t">Focus? Let it step aside</h3>
+              <p data-i18n="ft5.d">Hide the character and counting continues; it steps back automatically when an app is maximised or in full screen, then returns.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
