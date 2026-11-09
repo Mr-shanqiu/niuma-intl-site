@@ -27,11 +27,25 @@
 
 ## Links
 
-- Website: https://merit.zqscreen.cn/
-- Terms of Service: https://merit.zqscreen.cn/terms.html
-- Privacy Policy: https://merit.zqscreen.cn/privacy.html
-- Refund Policy: https://merit.zqscreen.cn/refund.html
-- Japan Specified Commercial Transactions Act disclosure: https://merit.zqscreen.cn/tokushoho.html
+Choose a language (each has its own indexable static path):
+
+- English: https://merit.zqscreen.cn/en/
+- Traditional Chinese (繁體中文): https://merit.zqscreen.cn/zh-Hant/
+- Japanese (日本語): https://merit.zqscreen.cn/ja/
+- Language landing page: https://merit.zqscreen.cn/
+
+Downloads:
+
+- English: https://merit.zqscreen.cn/en/download.html
+- Traditional Chinese: https://merit.zqscreen.cn/zh-Hant/download.html
+- Japanese: https://merit.zqscreen.cn/ja/download.html
+
+Legal pages (replace the language prefix with en / zh-Hant / ja):
+
+- Terms of Service: https://merit.zqscreen.cn/en/terms.html
+- Privacy Policy: https://merit.zqscreen.cn/en/privacy.html
+- Refund Policy: https://merit.zqscreen.cn/en/refund.html
+- Japan Specified Commercial Transactions Act disclosure: https://merit.zqscreen.cn/en/tokushoho.html
 
 ## Key FAQ facts
 

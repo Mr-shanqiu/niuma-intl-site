@@ -1,39 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://merit.zqscreen.cn/index.html</loc>
+    <loc>https://merit.zqscreen.cn/en/</loc>
     <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/"/>
   </url>
   <url>
-    <loc>https://merit.zqscreen.cn/download.html</loc>
+    <loc>https://merit.zqscreen.cn/zh-Hant/</loc>
     <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/"/>
   </url>
   <url>
-    <loc>https://merit.zqscreen.cn/terms.html</loc>
+    <loc>https://merit.zqscreen.cn/ja/</loc>
     <lastmod>2026-11-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/"/>
   </url>
   <url>
-    <loc>https://merit.zqscreen.cn/privacy.html</loc>
+    <loc>https://merit.zqscreen.cn/en/download.html</loc>
     <lastmod>2026-11-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/download.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/download.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/download.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/download.html"/>
   </url>
   <url>
-    <loc>https://merit.zqscreen.cn/refund.html</loc>
+    <loc>https://merit.zqscreen.cn/zh-Hant/download.html</loc>
     <lastmod>2026-11-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/download.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/download.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/download.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/download.html"/>
   </url>
   <url>
-    <loc>https://merit.zqscreen.cn/tokushoho.html</loc>
+    <loc>https://merit.zqscreen.cn/ja/download.html</loc>
     <lastmod>2026-11-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/download.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/download.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/download.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/download.html"/>
+  </url>
+  <url>
+    <loc>https://merit.zqscreen.cn/en/terms.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/terms.html"/>
+  </url>
+  <url>
+    <loc>https://merit.zqscreen.cn/zh-Hant/terms.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/terms.html"/>
+  </url>
+  <url>
+    <loc>https://merit.zqscreen.cn/ja/terms.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/terms.html"/>
+  </url>
+  <url>
+    <loc>https://merit.zqscreen.cn/en/privacy.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://merit.zqscreen.cn/zh-Hant/privacy.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://merit.zqscreen.cn/ja/privacy.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://merit.zqscreen.cn/en/refund.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/refund.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/refund.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/refund.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/refund.html"/>
+  </url>
+  <url>
+    <loc>https://merit.zqscreen.cn/zh-Hant/refund.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/refund.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/refund.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/refund.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/refund.html"/>
+  </url>
+  <url>
+    <loc>https://merit.zqscreen.cn/ja/refund.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/refund.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/refund.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/refund.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/refund.html"/>
+  </url>
+  <url>
+    <loc>https://merit.zqscreen.cn/en/tokushoho.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/tokushoho.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/tokushoho.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/tokushoho.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/tokushoho.html"/>
+  </url>
+  <url>
+    <loc>https://merit.zqscreen.cn/zh-Hant/tokushoho.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/tokushoho.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/tokushoho.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/tokushoho.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/tokushoho.html"/>
+  </url>
+  <url>
+    <loc>https://merit.zqscreen.cn/ja/tokushoho.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://merit.zqscreen.cn/en/tokushoho.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://merit.zqscreen.cn/zh-Hant/tokushoho.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://merit.zqscreen.cn/ja/tokushoho.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merit.zqscreen.cn/en/tokushoho.html"/>
   </url>
 </urlset>

@@ -158,6 +158,29 @@ svg { display: block; }
   background: var(--ink);
   color: var(--paper);
 }
+/* Path-based language switcher uses anchors; style them identically to buttons. */
+.lang a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  min-height: 32px;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease;
+}
+.lang a:hover { color: var(--ink); }
+.lang a[aria-current="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
 
 .hero {
   display: grid;
@@ -787,7 +810,7 @@ html[lang="ja"] .legal-section p { line-height: 2.1; }
   .brand-mark { width: 30px; height: 30px; border-radius: 9px; font-size: 15px; }
   .brand > span:last-child { max-width: 152px; }
   .lang { gap: 0; padding: 2px; }
-  .lang button { min-width: 29px; min-height: 30px; padding-inline: 6px; font-size: 11px; }
+  .lang button, .lang a { min-width: 29px; min-height: 30px; padding-inline: 6px; font-size: 11px; }
   .hero { gap: 48px; padding-block: 56px 64px; }
   .hero-badge { margin-bottom: 24px; font-size: 12px; }
   .hero h1 { font-size: clamp(42px, 12.8vw, 58px); line-height: 1.06; }
