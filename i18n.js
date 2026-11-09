@@ -27,6 +27,11 @@
       var v = (DICT[lang] && DICT[lang][k]) || (DICT.en && DICT.en[k]) || "";
       if(v) el.setAttribute("placeholder", v);
     });
+    document.querySelectorAll("[data-i18n-aria]").forEach(function(el){
+      var k = el.getAttribute("data-i18n-aria");
+      var v = (DICT[lang] && DICT[lang][k]) || (DICT.en && DICT.en[k]) || "";
+      if(v) el.setAttribute("aria-label", v);
+    });
     document.querySelectorAll(".lang button").forEach(function(b){
       var active = b.getAttribute("data-lang")===lang;
       b.classList.toggle("active", active);

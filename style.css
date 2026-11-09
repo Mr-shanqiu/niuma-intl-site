@@ -26,7 +26,7 @@ html[lang="zh-Hant"] {
 html[lang="ja"] {
   --paper: #f4f1e9;
   --ink: #252622;
-  --muted: #6c6b63;
+  --muted: #62635b;
   --line: #d8d4c9;
   --surface: #e9e6de;
   --accent: #465873;
@@ -131,6 +131,7 @@ svg { display: block; }
   transition: color .2s ease;
 }
 .main-nav a:hover { color: var(--ink); }
+.main-nav a[aria-current="page"] { color: var(--ink); text-decoration: underline; text-underline-offset: 6px; }
 .lang {
   display: flex;
   align-items: center;
@@ -239,6 +240,10 @@ html[lang="ja"] .hero-lead { font-size: 16px; line-height: 2; }
 .button:hover { transform: translateY(-2px); }
 .button-primary { background: var(--ink); color: var(--paper); }
 .button-primary:hover { background: var(--accent); }
+.button-secondary { border-color: var(--line); background: transparent; color: var(--ink); }
+.button-secondary:hover { border-color: var(--ink); }
+.button[aria-disabled="true"] { cursor: default; }
+.button[aria-disabled="true"]:hover { transform: none; }
 .text-link {
   padding-block: 8px;
   color: var(--ink);
@@ -525,6 +530,164 @@ html[lang="ja"] .japan-only { display: inline; }
 }
 .footer-links .copyright { margin-top: 8px; font-size: 12px; }
 
+/* The download page uses the same ruled, editorial structure as pricing. */
+.download-main { padding-block: 96px 120px; }
+.download-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(280px, .88fr);
+  align-items: end;
+  gap: clamp(48px, 8vw, 112px);
+  padding-bottom: 80px;
+}
+.download-kicker {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.download-intro h1 {
+  max-width: 700px;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(48px, 5.2vw, 72px);
+  font-weight: 500;
+  letter-spacing: -.05em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+html[lang="zh-Hant"] .download-intro h1 {
+  font-size: clamp(40px, 4.6vw, 60px);
+  font-weight: 600;
+  letter-spacing: .015em;
+  line-height: 1.35;
+}
+html[lang="ja"] .download-intro h1 {
+  font-size: clamp(38px, 4.4vw, 58px);
+  letter-spacing: .015em;
+  line-height: 1.45;
+  word-break: auto-phrase;
+}
+.download-intro-copy > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.85;
+}
+.assurance-list {
+  margin: 32px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+.assurance-list li {
+  position: relative;
+  padding-left: 16px;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.assurance-list li + li { margin-top: 8px; }
+.assurance-list li::before {
+  content: "";
+  position: absolute;
+  top: .85em;
+  left: 0;
+  width: 6px;
+  height: 1px;
+  background: var(--accent);
+}
+.download-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 64px;
+  padding-top: 56px;
+  border-top: 1px solid var(--line);
+}
+.platform-card {
+  min-width: 0;
+  padding-top: 28px;
+  border-top: 2px solid var(--ink);
+}
+.platform-card[data-recommended="true"] { border-top-color: var(--accent); }
+.platform-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+.platform-heading h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -.025em;
+  line-height: 1.4;
+}
+.platform-status {
+  display: none;
+  margin: 0;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: right;
+}
+.platform-card[data-recommended="true"] .platform-status { display: block; }
+.platform-requirement {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.download-button { max-width: 100%; margin-top: 32px; text-align: center; }
+.release-meta {
+  margin: 40px 0 0;
+  border-top: 1px solid var(--line);
+}
+.release-meta > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.release-meta dt { color: var(--muted); font-size: 13px; }
+.release-meta dd {
+  margin: 0;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+.checksum { border-bottom: 1px solid var(--line); }
+.checksum summary {
+  padding-block: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.checksum p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.release-note {
+  max-width: var(--reading);
+  margin: 32px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.download-help {
+  max-width: var(--reading);
+  margin-top: 88px;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+.download-help h2 { margin: 0; font-size: 20px; font-weight: 600; }
+.download-help p { margin: 16px 0 24px; color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
+
 /* Legal pages keep the same quiet identity, with reading width taking priority. */
 .legal-main { padding-block: 88px 120px; }
 .legal-layout {
@@ -608,6 +771,11 @@ html[lang="ja"] .legal-section p { line-height: 2.1; }
   .faq-section { padding-bottom: 96px; }
   .footer-grid { grid-template-columns: 1fr; gap: 48px; }
   .footer-links { justify-self: start; }
+  .download-main { padding-block: 72px 88px; }
+  .download-intro { grid-template-columns: 1fr; gap: 40px; padding-bottom: 64px; }
+  .download-intro-copy { max-width: 620px; }
+  .download-options { gap: 32px; padding-top: 48px; }
+  .download-help { margin-top: 72px; }
   .legal-main { padding-block: 64px 88px; }
   .legal-layout { grid-template-columns: 1fr; gap: 56px; }
 }
@@ -651,6 +819,15 @@ html[lang="ja"] .legal-section p { line-height: 2.1; }
   .faq-list details p { font-size: 14px; }
   .site-footer { padding-block: 48px; }
   .footer-links nav { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .download-main { padding-block: 56px 72px; }
+  .download-intro { gap: 32px; padding-bottom: 56px; }
+  .download-kicker { margin-bottom: 20px; font-size: 12px; }
+  .download-intro h1 { font-size: clamp(40px, 12vw, 52px); }
+  html[lang="zh-Hant"] .download-intro h1 { font-size: clamp(34px, 9.8vw, 44px); }
+  html[lang="ja"] .download-intro h1 { font-size: clamp(32px, 9.2vw, 42px); }
+  .download-intro-copy > p { font-size: 15px; }
+  .download-options { grid-template-columns: 1fr; gap: 56px; padding-top: 40px; }
+  .download-help { margin-top: 64px; padding-top: 32px; }
   .legal-main { padding-block: 48px 72px; }
   .legal-layout { gap: 40px; }
   .legal-intro h1 { font-size: 36px; }
