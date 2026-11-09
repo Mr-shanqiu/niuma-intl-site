@@ -54,7 +54,31 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Complete pack — client 9.6 + all current and future appearances",
+      "name": "Client 9.6 (one-time)",
+      "price": "0.80",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://merit.zqscreen.cn/ja/#pricing",
+      "seller": {
+        "@type": "Organization",
+        "name": "Corporate Cattle Merit"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Appearance (US$0.20 each; with the client or 4 at a time)",
+      "price": "0.20",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://merit.zqscreen.cn/ja/#pricing",
+      "seller": {
+        "@type": "Organization",
+        "name": "Corporate Cattle Merit"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Complete pack — client + all current and future appearances",
       "price": "3.60",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
@@ -98,7 +122,7 @@
           <h1 id="hero-title" class="anim" data-i18n="hero.h1">仕事中のタイピングが、静かに功徳になる。</h1>
           <p class="hero-lead anim" data-i18n="hero.lead">デスクに寄り添う、静かで邪魔をしない相棒。キー入力とクリックのたびに、少しずつ功徳が貯まります。アカウント不要、ネット接続不要。記録するのは数字だけです。</p>
           <div class="cta-row anim">
-            <a class="button button-primary" href="download.html" data-i18n="hero.cta1">購入してダウンロード · $3.60</a>
+            <a class="button button-primary" href="download.html" data-i18n="hero.cta1">購入してダウンロード</a>
             <a class="text-link" href="#pricing" data-i18n="hero.cta2">料金を見る</a>
           </div>
           <div class="hero-meta anim">
@@ -209,26 +233,50 @@
     <section id="pricing" class="section pricing-section" aria-labelledby="pricing-title">
       <div class="shell">
         <div class="section-heading">
-          <h2 id="pricing-title" data-i18n="price.title">ひとつの価格で、すべて込み</h2>
-          <p data-i18n="price.sub">US$3.60 の一度きりのお支払いで、クライアントもすべての外観もあなたのものに。</p>
+          <h2 id="pricing-title" data-i18n="price.title">シンプルな買い切り価格</h2>
+          <p data-i18n="price.sub">クライアントは一度だけ、外観は必要な分だけ追加。まとめて全部パックも。</p>
         </div>
-        <div class="pricing-grid pricing-grid-single">
-          <article class="price-item price-item-accent price-item-single">
-            <p class="price-kicker" data-i18n="pack.kicker">オールインワン</p>
-            <h3 data-i18n="pack.name">全部パック</h3>
-            <p class="price" data-i18n="pack.price">$3.60</p>
-            <p class="price-unit" data-i18n="pack.unit">一度きりのお支払い · ずっと使える</p>
+        <div class="pricing-grid">
+          <article class="price-item">
+            <p class="price-kicker" data-i18n="tier1.kicker">アプリのみ</p>
+            <h3 data-i18n="tier1.name">クライアント 9.6</h3>
+            <p class="price" data-i18n="tier1.price">$0.80</p>
+            <p class="price-unit" data-i18n="tier1.unit">一度きりのお支払い</p>
             <ul>
-              <li data-i18n="pack.li1">クライアント 9.6 の全機能——功徳カレンダー、仕事の進捗、社畜カーブ、修行ランク、多言語UI</li>
-              <li data-i18n="pack.li2">基本の木魚 + 現在のすべての外観</li>
-              <li data-i18n="pack.li3">VIP限定の外観 1 点</li>
-              <li data-i18n="pack.li4">今後追加されるすべての外観</li>
-              <li data-i18n="pack.li5">アカウント不要、完全オフラインで動作</li>
+              <li data-i18n="tier1.li1">全機能：功徳カレンダー、仕事の進捗、社畜カーブ、修行ランク、多言語UI</li>
+              <li data-i18n="tier1.li2">基本の木魚付き</li>
+              <li data-i18n="tier1.li3">アカウント不要、完全オフライン</li>
             </ul>
-            <a class="button button-primary price-cta" href="download.html" data-i18n="pack.cta">購入してダウンロード</a>
+            <a class="button button-secondary price-cta" href="download.html" data-i18n="tier1.cta">クライアントを購入</a>
+          </article>
+          <article class="price-item">
+            <p class="price-kicker" data-i18n="tier2.kicker">追加の外観</p>
+            <h3 data-i18n="tier2.name">外観</h3>
+            <p class="price" data-i18n="tier2.price">$0.20</p>
+            <p class="price-unit" data-i18n="tier2.unit">1点あたり</p>
+            <ul>
+              <li data-i18n="tier2.li1">クライアントと一緒に、または4点から購入（4点 = $0.80）</li>
+              <li data-i18n="tier2.li2">1点だけの販売はありません</li>
+              <li data-i18n="tier2.li3">永続保存、いつでもオフラインで読み込み</li>
+            </ul>
+            <a class="button button-secondary price-cta" href="download.html" data-i18n="tier2.cta">外観を追加</a>
+          </article>
+          <article class="price-item price-item-accent price-item-featured">
+            <span class="price-badge" data-i18n="tier3.badge">一番お得</span>
+            <p class="price-kicker" data-i18n="tier3.kicker">すべて込み</p>
+            <h3 data-i18n="tier3.name">全部パック</h3>
+            <p class="price" data-i18n="tier3.price">$3.60</p>
+            <p class="price-unit" data-i18n="tier3.unit">一度きりのお支払い</p>
+            <ul>
+              <li data-i18n="tier3.li1">クライアント 9.6 + 基本の木魚</li>
+              <li data-i18n="tier3.li2">現在のすべての外観</li>
+              <li data-i18n="tier3.li3">VIP限定の外観 1 点</li>
+              <li data-i18n="tier3.li4">今後追加されるすべての外観</li>
+            </ul>
+            <a class="button button-primary price-cta" href="download.html" data-i18n="tier3.cta">購入してダウンロード</a>
           </article>
         </div>
-        <p class="delivery-note" data-i18n="pack.note">一度のお支払いで、ダウンロードリンクと外観ファイルをメールでお送りします。デジタル商品のため即時提供です。</p>
+        <p class="delivery-note" data-i18n="price.note">すべて一度きりのお支払いです。決済後、ダウンロードリンクと外観ファイルをメールでお送りします。</p>
       </div>
     </section>
 
@@ -237,12 +285,13 @@
         <h2 id="faq-title" data-i18n="faq.title">よくある質問</h2>
       </div>
       <div class="faq-list">
-        <details open><summary data-i18n="q1.t">US$3.60 の買い切りに含まれるものは？</summary><p data-i18n="q1.d">すべてです。クライアント 9.6 の全機能（功徳カレンダー・仕事の進捗・社畜カーブ・修行ランク）、基本の木魚、現在のすべての外観、VIP限定の外観 1 点、今後のすべての外観。一度のお支払いでずっと使えます。</p></details>
-        <details><summary data-i18n="q2.t">購入後はどう受け取りますか？</summary><p data-i18n="q2.d">決済完了後、Windows / macOS のダウンロードリンクと外観ファイルをメールでお送りします。再ダウンロードのためメールを保存してください。</p></details>
-        <details><summary data-i18n="q3.t">入力内容は読まれますか？</summary><p data-i18n="q3.d">いいえ。キーが押された・クリックされたという事実だけを数えます。内容・カーソル位置・ウィンドウ名・クリップボードは読み取りも保存もしません。</p></details>
-        <details><summary data-i18n="q4.t">アカウントやネット接続は必要ですか？</summary><p data-i18n="q4.d">不要です。完全オフラインで動作し、ログイン・認証・テレメトリはありません。カウントと設定はすべて端末内に保存されます。</p></details>
-        <details><summary data-i18n="q5.t">返金できますか？</summary><p data-i18n="q5.d">デジタルコンテンツは引き渡し後すぐに利用できるため、任意の返金は行いません。ダウンロードや読み込みに失敗した場合、または二重に課金された場合は、30日以内にご連絡ください。修正または返金いたします。</p></details>
-        <details><summary data-i18n="q6.t">対応OSは？</summary><p data-i18n="q6.d">Windows 10/11 と macOS（Apple Silicon / Intel）。</p></details>
+        <details open><summary data-i18n="q1.t">購入できるプランを教えてください。</summary><p data-i18n="q1.d">一度きりの3つの選択肢：クライアント 9.6 は US$0.80、外観は1点 US$0.20（クライアントと一緒、または4点から、4点 = $0.80）、全部パックは US$3.60 でクライアント・現在のすべての外観・VIP限定の外観1点・今後のすべての外観を含みます。</p></details>
+        <details><summary data-i18n="q2.t">外観を1点だけ買えますか？</summary><p data-i18n="q2.d">いいえ。外観はクライアントと一緒、または4点から購入できます（4点 = $0.80）。1点だけの販売はありません。</p></details>
+        <details><summary data-i18n="q3.t">購入後はどう受け取りますか？</summary><p data-i18n="q3.d">決済完了後、Windows / macOS のダウンロードリンクと外観ファイルをメールでお送りします。再ダウンロードのためメールを保存してください。</p></details>
+        <details><summary data-i18n="q4.t">入力内容は読まれますか？</summary><p data-i18n="q4.d">いいえ。キーが押された・クリックされたという事実だけを数えます。内容・カーソル位置・ウィンドウ名・クリップボードは読み取りも保存もしません。</p></details>
+        <details><summary data-i18n="q5.t">アカウントやネット接続は必要ですか？</summary><p data-i18n="q5.d">不要です。完全オフラインで動作し、ログイン・認証・テレメトリはありません。カウントと設定はすべて端末内に保存されます。</p></details>
+        <details><summary data-i18n="q6.t">返金できますか？</summary><p data-i18n="q6.d">デジタルコンテンツは引き渡し後すぐに利用できるため、任意の返金は行いません。ダウンロードや読み込みに失敗した場合、または二重に課金された場合は、30日以内にご連絡ください。修正または返金いたします。</p></details>
+        <details><summary data-i18n="q7.t">対応OSは？</summary><p data-i18n="q7.d">Windows 10/11 と macOS（Apple Silicon / Intel）。</p></details>
       </div>
     </section>
   </main>
